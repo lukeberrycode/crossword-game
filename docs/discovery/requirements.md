@@ -1,4 +1,4 @@
-# Requirements (draft for the first gate)
+# Requirements
 
 Drawn from the rules (root `README.md`) and the interview with Luke on 23 October 2026. Every requirement is tested at the API boundary or the UI, so the same tests run against both the Java and .NET servers.
 
@@ -14,7 +14,7 @@ Drawn from the rules (root `README.md`) and the interview with Luke on 23 Octobe
 | LOAD | Load test against a deployed environment |
 | REV | Review against a checklist, by a person |
 
-**Status:** every requirement is *Draft* until the gate.
+**Status:** signed off by Luke at the first gate (24 October 2026). None dropped.
 
 ## Games and draw orders (G1–G4; risk 2)
 
@@ -150,7 +150,7 @@ Drawn from the rules (root `README.md`) and the interview with Luke on 23 Octobe
 
 | ID | Requirement | Test |
 |---|---|---|
-| TEST-1 | Test builds of both servers can start a game from an explicit draw order and use a given test word list | AT |
+| TEST-1 | Test builds of both servers can start a game from any sequence of tiles (not necessarily the full 101-tile set) and use a given word list | AT |
 | TEST-2 | These hooks don't exist in production builds | AT (against a production build) |
 
 ## Mocking and test tools
@@ -165,4 +165,5 @@ Drawn from the rules (root `README.md`) and the interview with Luke on 23 Octobe
 
 ## Still to do before the gate
 
-- **Acceptance tests** for every requirement, each traced to its requirement.
+- **Acceptance tests:** written (`acceptance/`, 83 scenarios, traced by tag), apart from the shuffle's test vectors, which wait for Planning. The word-list script tests are executable now (`tests/wordlist/`).
+- **Luke's sign-off:** given, 24 October 2026.

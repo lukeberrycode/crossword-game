@@ -28,18 +28,20 @@ A portfolio project, to close gaps in the Grove Talent advert (`jobs-sept-26/uns
 
 | Question | Answer |
 |---|---|
-| What does it do? | `one-pager.md` (draft) |
-| Who are its users; their states, risks and journeys? | `users-states-journeys.md` (draft) |
-| What are the requirements, and how is each tested? | `requirements.md` (draft; no open questions) |
+| What does it do? | `one-pager.md` |
+| Who are its users; their states, risks and journeys? | `users-states-journeys.md` |
+| What are the requirements, and how is each tested? | `requirements.md` (signed off) |
+| Board and tiles | `board-and-tiles.md` (approved) |
+| Acceptance scenarios (in place of characterisation tests) | `../../acceptance/` (83 scenarios); word-list tests in `../../tests/wordlist/` (13, passing) |
 
 ## First gate
 
-**Not yet passed.**
+**Passed** (Luke, 24 October 2026). Planning can start.
 
 - [x] Requirements drawn from the interview, each with a test method (`requirements.md`)
 - [x] Board and tile design proposed by Claude (`board-and-tiles.md`)
 - [x] Luke: board and tiles approved, 8-tile bonus, 15 × 15 kept with IP constraint D-2 amended (24 October 2026)
 - [x] Offensive-word blocklist drafted by Claude (`data/wordlist/blocklist/`)
 - [x] Luke: blocklist decisions approved (24 October 2026)
-- [ ] Acceptance tests written for the requirements, each traced to its requirement
-- [ ] Luke: sign off the requirements, recording any dropped with the reason
+- [x] Acceptance tests written for the requirements, each traced to its requirement (`acceptance/README.md`); GAME-2/GAME-3 test vectors wait for Planning
+- [x] Luke: requirements signed off, none dropped (24 October 2026)
