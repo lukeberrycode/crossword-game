@@ -39,6 +39,7 @@ A portfolio project, to close gaps in the Grove Talent advert (`jobs-sept-26/uns
 - [x] Requirements drawn from the interview, each with a test method (`requirements.md`)
 - [x] Board and tile design proposed by Claude (`board-and-tiles.md`)
 - [x] Luke: board and tiles approved, 8-tile bonus, 15 × 15 kept with IP constraint D-2 amended (24 October 2026)
-- [ ] Offensive-word blocklist additions drafted by Claude and approved by Luke
+- [x] Offensive-word blocklist drafted by Claude (`data/wordlist/blocklist/`)
+- [x] Luke: blocklist decisions approved (24 October 2026)
 - [ ] Acceptance tests written for the requirements, each traced to its requirement
 - [ ] Luke: sign off the requirements, recording any dropped with the reason

@@ -117,10 +117,11 @@ Drawn from the rules (root `README.md`) and the interview with Luke on 23 Octobe
 
 | ID | Requirement | Test |
 |---|---|---|
-| WORD-1 | The game's word list is ENABLE (`data/wordlist/enable1.txt`) minus a blocklist of offensive words | AT |
-| WORD-2 | The filtered list is produced by a repeatable script, re-run whenever ENABLE or the blocklist is updated. The original ENABLE file is kept unchanged | AT (script test), REV |
+| WORD-1 | The game's word list is `data/wordlist/game-words.txt`: ENABLE (`data/wordlist/enable1.txt`) minus the words blocked in `data/wordlist/blocklist/decisions.tsv` | AT |
+| WORD-2 | The filtered list is produced by a repeatable script (`scripts/build_wordlist.py`), re-run whenever ENABLE or the blocklist is updated; CI runs it with `--check`. The original ENABLE and LDNOOBW files are kept unchanged. The script fails if any LDNOOBW entry in ENABLE has no decision | AT (script test), REV |
 | WORD-3 | The blocklist is the English list from LDNOOBW ("List of Dirty, Naughty, Obscene, and Otherwise Bad Words", CC BY 4.0), plus the project's own additions. Its source, licence and attribution are recorded in `CREDITS.md` | REV |
-| WORD-6 | The project's own additions come from a review of ENABLE for offensive words that LDNOOBW misses: Claude drafts the list, and Luke approves it | REV |
+| WORD-6 | Policy (Luke, 24 October 2026): block slurs and strong profanity; allow clinical, mild and non-vulgar sexual words, and words whose main meaning is innocent. LDNOOBW is a checklist, not applied whole. Claude drafted the decisions, including additions LDNOOBW misses; Luke approved them on 24 October 2026 | REV |
+| WORD-7 | Blocking is by exact word, never by substring, and each inflection is decided separately | AT (script test) |
 | WORD-4 | The exclusions in the rules (proper nouns, abbreviations, hyphenated words, lone prefixes and suffixes) are already met by ENABLE; this is checked once by script | AT (script test) |
 | WORD-5 | Both servers use the identical filtered list | X |
 
@@ -164,5 +165,4 @@ Drawn from the rules (root `README.md`) and the interview with Luke on 23 Octobe
 
 ## Still to do before the gate
 
-- **Blocklist additions** (WORD-6): Claude drafts; Luke approves.
 - **Acceptance tests** for every requirement, each traced to its requirement.
