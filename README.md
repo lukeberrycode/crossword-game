@@ -4,6 +4,8 @@ Many games are in progress at any time, and players may join any game they like 
 
 Each game has a single notional player, and the people using the app log on, choose a game to load up, and control this notional player. They can make new moves on behalf of the player, or they can rewind a game to previous turns and redo the players past moves, attempting to score higher than the player originally did at that point in the game. The rules below are written from the point of view of whoever is in control for the current turn. See [Taking a turn](#taking-a-turn) for how this works.
 
+It is a game of creative destruction, where the total corpus of the app's users compete with one another to create the optimal sequence of turns for each game. Each player will gain prestige by playing excellent turns, and by invalidating the inferior attempts of other players!
+
 The components of the game:
 - a set of 101 letter tiles, each showing a letter in a large and central position and its score as a subscript.
 - a board with a grid. The grid is square and has an odd number of cells on each side, so that it has exactly one centre cell. Some cells are premium cells, which boost the score of tiles placed on them (see [Premium cells](#premium-cells)).
