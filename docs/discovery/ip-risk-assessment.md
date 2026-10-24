@@ -61,7 +61,7 @@ Residual risk with all mitigations in place: **Low**.
 These constraints apply to all subsequent design and implementation work.
 
 - **D-1 Name and copy.** The product name has no association with the *Scrabble* trademark. Repository and product copy describe the game generically (e.g. "a crossword-style word tile game") and do not use the trademark as a descriptor or comparison.
-- **D-2 Board.** The board dimensions and premium-square positions are an original design.
+- **D-2 Board.** The premium-square positions are an original design. The dimensions may match the classic 15 × 15 board (amended 24 October 2026, Luke: the rack size equals the board's width, and 15 tiles suits play; see `board-and-tiles.md`).
 - **D-3 Tiles.** Letter point values and the tile distribution are an original design.
 - **D-4 Visual identity.** The colour palette, tile styling, typography and iconography are original and do not reproduce the appearance of the official board or tiles.
 - **D-5 Rules text.** All rules and help text are written independently.
@@ -73,7 +73,7 @@ These constraints apply to all subsequent design and implementation work.
 Before each public release:
 
 - [ ] Product name and copy meet D-1
-- [ ] Board layout differs from the original (D-2)
+- [ ] Premium-square layout differs from the original (D-2)
 - [ ] Tile values and distribution differ from the original (D-3)
 - [ ] Visual design has been reviewed against D-4
 - [ ] Rules text is original (D-5)
