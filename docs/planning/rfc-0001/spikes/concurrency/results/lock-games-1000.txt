@@ -1,0 +1,7 @@
+mode=row lock games=1000 threads=32 seconds=15
+plays handled 931/s (accepted 12373, refused: score not higher 1562, history changed 28), retries 0 (beaten turn vanished 0), gave up after 5 s 0
+latency p50 26.8 ms, p95 61.6 ms, p99 93.0 ms, max 315.7 ms
+check: build-up = surviving turns, per player             OK
+check: burn-down = turns removed, per player              OK
+check: each game's turns are numbered 1..n with no gaps   OK
+check: no turn was written after its game's current version OK

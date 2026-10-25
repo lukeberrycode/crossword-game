@@ -1,0 +1,7 @@
+mode=version check + retry games=1 threads=32 seconds=15
+plays handled 215/s (accepted 1638, refused: score not higher 1069, history changed 497), retries 7669 (beaten turn vanished 19), gave up after 5 s 20
+latency p50 5.7 ms, p95 219.7 ms, p99 3389.8 ms, max 6193.2 ms
+check: build-up = surviving turns, per player             OK
+check: burn-down = turns removed, per player              OK
+check: each game's turns are numbered 1..n with no gaps   OK
+check: no turn was written after its game's current version OK
