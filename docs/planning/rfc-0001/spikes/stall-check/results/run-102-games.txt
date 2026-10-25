@@ -1,0 +1,107 @@
+openjdk version "25.0.4.1" 2026-08-18 LTS
+trie: 172692 words, 387679 nodes, built in 209 ms
+games measured: 100 (completed 3, stalled 97), turns measured: 3131, most plays in one state: 1805462
+any play? (the stall check)                  n= 3131  p50=   0.027 ms  p95=   1.292 ms  p99=   3.803 ms  max=    8.910 ms
+any play? when there was none (stalled)      n=   97  p50=   0.118 ms  p95=   0.237 ms  p99=   0.582 ms  max=    0.582 ms
+every play (full enumeration, worst-case bound) n= 1044  p50=   4.444 ms  p95=  54.940 ms  p99= 173.917 ms  max=  607.494 ms
+  every play, rack with 0 blank(s)           n=  941  p50=   3.852 ms  p95=  18.200 ms  p99=  30.901 ms  max=   47.337 ms
+  every play, rack with 1 blank(s)           n=   97  p50=  54.168 ms  p95= 209.984 ms  p99= 274.312 ms  max=  274.312 ms
+  every play, rack with 2 blank(s)           n=    6  p50= 173.917 ms  p95= 607.494 ms  p99= 607.494 ms  max=  607.494 ms
+stalls (each confirmed by an independent enumeration):
+  game 2: stalled after 30 turns, 0 tiles left in the bag, rack Q
+  game 3: stalled after 27 turns, 0 tiles left in the bag, rack CQ
+  game 4: stalled after 28 turns, 0 tiles left in the bag, rack Q
+  game 5: stalled after 32 turns, 0 tiles left in the bag, rack QZ
+  game 6: stalled after 26 turns, 0 tiles left in the bag, rack VZ
+  game 7: stalled after 32 turns, 0 tiles left in the bag, rack Q
+  game 8: stalled after 33 turns, 0 tiles left in the bag, rack JQ
+  game 9: stalled after 28 turns, 0 tiles left in the bag, rack CCQ
+  game 10: stalled after 27 turns, 0 tiles left in the bag, rack JQ
+  game 11: stalled after 32 turns, 0 tiles left in the bag, rack Q
+  game 12: stalled after 29 turns, 0 tiles left in the bag, rack Q
+  game 13: stalled after 35 turns, 0 tiles left in the bag, rack QVZ
+  game 14: stalled after 27 turns, 0 tiles left in the bag, rack JZ
+  game 15: stalled after 31 turns, 0 tiles left in the bag, rack JQ
+  game 16: stalled after 30 turns, 0 tiles left in the bag, rack JKQV
+  game 17: stalled after 31 turns, 0 tiles left in the bag, rack QZ
+  game 18: stalled after 31 turns, 0 tiles left in the bag, rack QZ
+  game 19: stalled after 28 turns, 0 tiles left in the bag, rack J
+  game 20: stalled after 27 turns, 0 tiles left in the bag, rack QVZ
+  game 21: stalled after 27 turns, 0 tiles left in the bag, rack JQ
+  game 22: stalled after 28 turns, 0 tiles left in the bag, rack Q
+  game 23: stalled after 32 turns, 0 tiles left in the bag, rack QVZ
+  game 24: stalled after 28 turns, 0 tiles left in the bag, rack CQV
+  game 25: stalled after 32 turns, 0 tiles left in the bag, rack Q
+  game 26: stalled after 29 turns, 0 tiles left in the bag, rack QZ
+  game 27: stalled after 29 turns, 0 tiles left in the bag, rack CCJQV
+  game 28: stalled after 31 turns, 0 tiles left in the bag, rack Q
+  game 29: stalled after 35 turns, 0 tiles left in the bag, rack JNQ
+  game 30: stalled after 32 turns, 0 tiles left in the bag, rack QZ
+  game 31: stalled after 37 turns, 0 tiles left in the bag, rack Q
+  game 32: stalled after 36 turns, 0 tiles left in the bag, rack Q
+  game 33: stalled after 30 turns, 0 tiles left in the bag, rack JZ
+  game 34: stalled after 32 turns, 0 tiles left in the bag, rack Q
+  game 35: stalled after 31 turns, 0 tiles left in the bag, rack V
+  game 36: stalled after 30 turns, 0 tiles left in the bag, rack QZ
+  game 37: stalled after 31 turns, 0 tiles left in the bag, rack QUZ
+  game 38: stalled after 30 turns, 0 tiles left in the bag, rack QZ
+  game 39: stalled after 34 turns, 0 tiles left in the bag, rack CCV
+  game 40: stalled after 33 turns, 0 tiles left in the bag, rack QV
+  game 42: stalled after 31 turns, 0 tiles left in the bag, rack CCZ
+  game 43: stalled after 32 turns, 0 tiles left in the bag, rack JQZ
+  game 44: stalled after 34 turns, 0 tiles left in the bag, rack QZ
+  game 45: stalled after 29 turns, 0 tiles left in the bag, rack QZ
+  game 46: stalled after 28 turns, 0 tiles left in the bag, rack Q
+  game 47: stalled after 28 turns, 0 tiles left in the bag, rack Q
+  game 48: stalled after 34 turns, 0 tiles left in the bag, rack JQZ
+  game 49: stalled after 31 turns, 0 tiles left in the bag, rack Q
+  game 50: stalled after 29 turns, 0 tiles left in the bag, rack QZ
+  game 51: stalled after 31 turns, 0 tiles left in the bag, rack J
+  game 52: stalled after 23 turns, 0 tiles left in the bag, rack JQ
+  game 53: stalled after 27 turns, 0 tiles left in the bag, rack QZ
+  game 54: stalled after 30 turns, 0 tiles left in the bag, rack JQ
+  game 55: stalled after 30 turns, 0 tiles left in the bag, rack Q
+  game 56: stalled after 29 turns, 0 tiles left in the bag, rack J
+  game 57: stalled after 30 turns, 0 tiles left in the bag, rack QZ
+  game 58: stalled after 31 turns, 0 tiles left in the bag, rack Z
+  game 59: stalled after 31 turns, 0 tiles left in the bag, rack C
+  game 60: stalled after 34 turns, 0 tiles left in the bag, rack CQ
+  game 61: stalled after 31 turns, 0 tiles left in the bag, rack JQZ
+  game 62: stalled after 36 turns, 0 tiles left in the bag, rack Q
+  game 63: stalled after 26 turns, 0 tiles left in the bag, rack QV
+  game 64: stalled after 26 turns, 0 tiles left in the bag, rack KQZ
+  game 65: stalled after 32 turns, 0 tiles left in the bag, rack QZ
+  game 66: stalled after 33 turns, 0 tiles left in the bag, rack Q
+  game 67: stalled after 29 turns, 0 tiles left in the bag, rack QZ
+  game 68: stalled after 28 turns, 0 tiles left in the bag, rack CQ
+  game 69: stalled after 30 turns, 0 tiles left in the bag, rack QVZ
+  game 70: stalled after 32 turns, 0 tiles left in the bag, rack NQVZ
+  game 71: stalled after 32 turns, 0 tiles left in the bag, rack QZ
+  game 72: stalled after 26 turns, 0 tiles left in the bag, rack CJQ
+  game 73: stalled after 34 turns, 0 tiles left in the bag, rack Q
+  game 75: stalled after 30 turns, 0 tiles left in the bag, rack QZ
+  game 76: stalled after 30 turns, 0 tiles left in the bag, rack Q
+  game 77: stalled after 28 turns, 0 tiles left in the bag, rack Q
+  game 78: stalled after 29 turns, 0 tiles left in the bag, rack QZ
+  game 79: stalled after 32 turns, 0 tiles left in the bag, rack QZ
+  game 80: stalled after 27 turns, 0 tiles left in the bag, rack QZ
+  game 81: stalled after 28 turns, 0 tiles left in the bag, rack JQZ
+  game 82: stalled after 32 turns, 0 tiles left in the bag, rack Q
+  game 83: stalled after 31 turns, 0 tiles left in the bag, rack Q
+  game 85: stalled after 32 turns, 0 tiles left in the bag, rack Q
+  game 86: stalled after 34 turns, 0 tiles left in the bag, rack Q
+  game 87: stalled after 29 turns, 0 tiles left in the bag, rack Z
+  game 88: stalled after 27 turns, 0 tiles left in the bag, rack JQ
+  game 89: stalled after 29 turns, 0 tiles left in the bag, rack CCCDGKQRZ
+  game 90: stalled after 32 turns, 0 tiles left in the bag, rack Q
+  game 91: stalled after 29 turns, 0 tiles left in the bag, rack JQZ
+  game 92: stalled after 33 turns, 0 tiles left in the bag, rack Q
+  game 93: stalled after 33 turns, 0 tiles left in the bag, rack JQ
+  game 94: stalled after 33 turns, 0 tiles left in the bag, rack Q
+  game 95: stalled after 30 turns, 0 tiles left in the bag, rack JQZ
+  game 96: stalled after 29 turns, 0 tiles left in the bag, rack JQV
+  game 97: stalled after 26 turns, 0 tiles left in the bag, rack QZ
+  game 98: stalled after 30 turns, 0 tiles left in the bag, rack QZ
+  game 99: stalled after 32 turns, 0 tiles left in the bag, rack Q
+  game 100: stalled after 32 turns, 0 tiles left in the bag, rack QZ
+  game 101: stalled after 28 turns, 0 tiles left in the bag, rack JQ

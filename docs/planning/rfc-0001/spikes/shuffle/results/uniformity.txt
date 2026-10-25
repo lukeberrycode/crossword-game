@@ -1,0 +1,3 @@
+position 0: chi-squared = 18.1 (26 d.f.; < 54.05 passes at p = 0.001)
+position 50: chi-squared = 30.6 (26 d.f.; < 54.05 passes at p = 0.001)
+position 100: chi-squared = 26.3 (26 d.f.; < 54.05 passes at p = 0.001)
